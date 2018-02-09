@@ -1,0 +1,34 @@
+{
+  "name": "plokko/formidable",
+  "description": "Vue.js form generator for Laravel",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "laravel",
+    "form"
+  ],
+  "type": "library",
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Plokko\\Formidable\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Plokko\\Formidable\\ServiceProvider"
+      ],
+      "aliases": {
+        "Formidable": "Plokko\\Formidable\\Facades\\Formidable"
+      }
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
